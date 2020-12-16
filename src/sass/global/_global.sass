@@ -1,0 +1,61 @@
+html
+  overflow-x: hidden
+  scroll-behavior: smooth
+body
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  font-family: Montserrat
+  position: relative
+  overflow-x: hidden
+  &.hidden
+    max-height: 100vh
+    overflow: hidden
+  *
+    -webkit-tap-highlight-color: transparent
+  main
+    flex: 1
+img
+  width: 100%
+  height: auto
+*
+  letter-spacing: -0.01em
+.btn
+  width: 180px
+  padding: 6px
+  background: $main-color
+  border: none
+  outline: none
+  font-family: Montserrat
+  font-weight: normal
+  font-size: 13px
+  line-height: 140%
+  text-align: center
+  letter-spacing: -0.01em
+  color: #FFFFFF
+  display: flex
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  cursor: pointer
+  position: relative
+  &.btn-with-arrow
+    &:after
+      content: ''
+      position: absolute
+      width: 15px
+      height: 9px
+      right: 20px
+      top: 0
+      bottom: 0
+      margin: auto
+      background: url("../img/svg/arrow-right-white.svg") center center / 100% 100% no-repeat
+
+.section-title
+  font-weight: 500
+  font-size: 22px
+  line-height: 140%
+  color: $text-color
+  text-transform: uppercase
+  span
+    font-weight: 400

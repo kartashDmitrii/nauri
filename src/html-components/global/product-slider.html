@@ -1,0 +1,29 @@
+<div class="product-slider">
+    <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                @@for (var i = 0; i < 12; i++) {
+                <div class="swiper-slide">
+                    <div class="product">
+                        <a href="#" class="image">
+                            <img src="img/product.png" alt="#">
+                        </a>
+                        <div class="mark @@mark.class">@@mark.text</div>
+                        <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
+                        <div class="price">
+                            <p class="old-price"></p>
+                            <p class="new-price"></p>
+                        </div>
+                        <a href="#" class="btn btn-with-arrow">Купить</a>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+        <div class="arrows">
+            <div class="arrow prev"></div>
+            <div class="arrow next"></div>
+        </div>
+    </div>
+    <div class="pagination"></div>
+</div>
