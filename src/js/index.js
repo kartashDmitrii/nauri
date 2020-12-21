@@ -21,6 +21,24 @@ if (document.querySelector('section.brands')){
                     return `<span class="dot ${className}"></span>`
                 }
             },
+            breakpoints: {
+                768: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5,
+                },
+                577: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                },
+                421: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+                0: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                }
+            }
         });
     })
 }

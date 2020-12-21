@@ -59,3 +59,34 @@ img
   text-transform: uppercase
   span
     font-weight: 400
+
+section.popup-wrapper
+  width: 100vw
+  height: 100vh
+  position: fixed
+  z-index: 10
+  background: rgba(0,0,0,.5)
+  display: none
+  &.active
+    display: flex
+
+.container-main
+  display: flex
+  position: static
+  flex: 1
+  .container-small
+    width: 77%
+    padding-left: 13px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    @media (max-width: 767px)
+      width: 100%
+      padding-left: 0
+    &>.wrapper
+      flex: 1
+  aside
+    width: 23%
+    position: relative
+    @media (max-width: 767px)
+      width: 0

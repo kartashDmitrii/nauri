@@ -1,0 +1,36 @@
+.custom-pagination
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  width: max-content
+  margin: 0 auto 100px
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    li
+      margin-right: 10px
+      font-weight: 300
+      font-size: 16px
+      line-height: 140%
+      color: #000
+      &.current
+        font-weight: 600
+        color: $second-color
+      &:last-child
+        margin-right: 0
+      a
+        color: inherit
+        text-decoration: inherit
+  .arrow-next
+    position: absolute
+    top: 0
+    right: -30px
+    bottom: 0
+    margin: auto
+    width: 15px
+    height: 9px
+    cursor: pointer
+    background: url("../img/svg/arrow-right-black.svg") center center / 100% 100% no-repeat

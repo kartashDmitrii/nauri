@@ -1,0 +1,94 @@
+section.grid-catalog
+  display: flex
+  flex-direction: column
+  .sort-filter
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 25px
+    .sort-type
+      flex: 1
+      display: flex
+      align-items: center
+      span
+        font-size: 12px
+        line-height: 140%
+        margin-right: 20px
+      &>a
+        font-weight: 300
+        font-size: 12px
+        line-height: 140%
+        color: #000
+        text-decoration: none
+        margin-right: 40px
+        position: relative
+        &.active
+          color: $second-color
+          &:after
+            content: ''
+            width: calc(100% + 6px)
+            height: 3px
+            background: $second-color
+            position: absolute
+            top: calc(100% + 3px)
+            left: -3px
+            right: -3px
+            margin: auto
+        &:last-child
+          margin-right: 30px
+      .sort-value
+        display: flex
+        align-items: center
+        a
+          width: 8px
+          height: 12px
+          margin-right: 20px
+          background: url("../img/svg/slider-arrow.svg") center center / 100% 100% no-repeat
+          &.up
+            transform: rotate(-90deg)
+          &.down
+            transform: rotate(90deg)
+          &.active
+            background-image: url("../img/svg/slider-arrow-green.svg")
+          &:last-child
+            margin-right: 0
+    .reset
+      font-weight: 300
+      font-size: 10px
+      line-height: 140%
+      text-decoration: underline
+      color: #6d6d6d
+      padding-right: 12px
+      position: relative
+      &:hover
+        text-decoration: none
+      &:after
+        content: ''
+        width: 7px
+        height: 1px
+        background: #6D6D6D
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        margin: auto
+        transform: rotate(45deg)
+      &:before
+        content: ''
+        width: 7px
+        height: 1px
+        background: #6D6D6D
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        margin: auto
+        transform: rotate(-45deg)
+  .grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-auto-rows: 1fr
+    grid-gap: 10px
+    margin-bottom: 25px
+    @media (max-width: 1365px)
+      grid-template-columns: repeat(3, 1fr)

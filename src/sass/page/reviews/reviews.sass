@@ -1,0 +1,108 @@
+section.reviews
+  display: flex
+  flex-direction: column
+  .section-title
+    margin-bottom: 10px
+  &>.text
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+    p
+      width: calc(100% - 350px)
+      font-size: 16px
+      line-height: 20px
+      margin: 0 50px 0 0
+    .btn
+      width: 300px
+      background: transparent
+      border: 2px solid $main-color
+      color: $main-color
+      &:after
+        background: url("../img/svg/arrow-right-pink.svg") center center / 100% 100% no-repeat
+  .review-grid
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 30px
+    margin-bottom: 35px
+    .review
+      display: flex
+      border-bottom: 1px solid #C4C4C4
+      .user
+        width: 25%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        &:after
+          content: ''
+          width: 1px
+          height: 90%
+          background: $main-color
+          position: absolute
+          top: 5%
+          right: 0
+          bottom: 5%
+          margin: auto
+        .name
+          font-size: 16px
+          line-height: 20px
+          color: $text-color
+          margin: 0
+        .date
+          font-size: 13px
+          line-height: 20px
+          color: #a1a1a1
+          margin: 0
+      .comment
+        width: 75%
+        box-sizing: border-box
+        padding: 5px 0 50px 20px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        position: relative
+        .text
+          display: flex
+          flex-direction: column
+          margin-bottom: 18px
+          *
+            margin: 0 0 5px
+            &:last-child
+              margin-bottom: 0
+          p
+            font-size: 16px
+            line-height: 140%
+            color: $text-color
+        .rating
+          display: flex
+          position: absolute
+          bottom: 5px
+          right: 0
+          div
+            margin-right: 20px
+            padding-top: 12px
+            position: relative
+            &:before
+              content: ''
+              width: 12px
+              height: 12px
+              position: absolute
+              top: 0
+              right: 0
+              left: 0
+              margin: auto
+            &.like:before
+              background: url("../img/svg/like.svg") center center / 100% 100% no-repeat
+            &.dislike:before
+              background: url("../img/svg/dislike.svg") center center / 100% 100% no-repeat
+            &:last-child
+              margin-right: 0
+            span
+              font-size: 11px
+              line-height: 20px
+              color: #000
+              margin: 0
+  .product-slider
+    margin-bottom: 100px

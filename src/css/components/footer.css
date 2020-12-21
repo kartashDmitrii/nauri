@@ -1,0 +1,30 @@
+footer {
+  background: #FFF4F5; }
+  footer .container {
+    display: grid;
+    grid-template-areas: 'logo links btn' 'logo links social' 'development links term'; }
+    footer .container .logo {
+      grid-area: logo;
+      width: 220px;
+      height: 160px; }
+    footer .container .btn {
+      grid-area: btn;
+      width: 220px;
+      margin-bottom: 30px; }
+    footer .container .development {
+      grid-area: development;
+      display: flex;
+      text-decoration: none; }
+      footer .container .development p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #977177;
+        margin: 0 8px 0 0; }
+      footer .container .development img {
+        width: 25px;
+        height: 14px; }
+    footer .container .social {
+      grid-area: social;
+      display: flex;
+      flex-direction: column; }

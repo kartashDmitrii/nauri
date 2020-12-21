@@ -1,0 +1,122 @@
+aside
+  display: flex
+  flex-direction: column
+  padding: 25px 35px 65px 0
+  box-sizing: border-box
+  align-self: flex-start
+  border-right: 1px solid #e1e1e1
+  .custom-filter
+    .filter-wrapper
+      max-height: 310px
+      overflow-y: scroll
+      transition: height .3s
+      &::-webkit-scrollbar-track
+        background-color: #EEEEEE
+      &::-webkit-scrollbar
+        width: 3px
+      &::-webkit-scrollbar-thumb
+        background-color: #989898
+      .ocf-option-values
+        height: max-content
+        padding: 0
+        margin: 0
+        list-style: none
+        display: flex
+        flex-direction: column
+        label
+          display: block
+          position: relative
+          padding-left: 25px
+          margin-bottom: 14px
+          cursor: pointer
+          font-size: 16px
+          user-select: none
+          &:hover input ~ span
+            background-color: #FFCCD9
+          input
+            position: absolute
+            opacity: 0
+            cursor: pointer
+            height: 0
+            width: 0
+            &:checked ~ span
+              background-color: $main-color
+          span
+            position: absolute
+            top: 1px
+            left: 0
+            height: 14px
+            width: 14px
+            background-color: #FFECEE
+  .price-filter
+    .filter-wrapper
+      width: 100%
+      overflow: hidden
+      transition: height .3s
+      box-sizing: border-box
+      .ofc-range-value
+        display: flex
+        align-items: center
+        width: 100%
+      .price-range
+        flex: 1
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        padding: 15px 0 10px
+        box-sizing: border-box
+        label
+          width: 45%
+          display: flex
+          align-items: center
+          input
+            width: 100%
+            appearance: none
+            border: 1px solid #DDDDDD
+            box-sizing: border-box
+            text-align: center
+            font-size: 16px
+            line-height: 28px
+            outline: none
+            &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+              appearance: none
+              margin: 0
+        span
+          width: 10%
+          text-align: center
+          padding: 0
+      span
+        font-size: 16px
+        line-height: 28px
+        color: #000
+        margin: 0
+        padding-left: 4px
+        box-sizing: border-box
+  .filter
+    display: flex
+    flex-direction: column
+    margin-bottom: 36px
+    &:last-child
+      margin-bottom: 0
+    .ocf-option-name
+      font-size: 18px
+      line-height: 140%
+      text-transform: uppercase
+      margin: 0 0 5px
+      position: relative
+      cursor: pointer
+      &:after
+        content: ''
+        width: 6px
+        height: 11px
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        margin: auto
+        background: url("../img/svg/filter-arrow.svg") center center / 100% 100% no-repeat
+        transform: rotate(0deg)
+        transition: transform .3s
+      &.active:after
+        transform: rotate(-90deg)

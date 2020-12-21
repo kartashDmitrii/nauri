@@ -1,0 +1,39 @@
+<section class="reviews container">
+    <span class="section-title">Отзывы</span>
+    <div class="text">
+        <p>Вы можете оценить качество работы нашего магазина и оставить отзыв о нашей работе. Прежде чем оставить отзыв,
+            ознакомьтесь пожалуйста с правилами публикации отзывов на сайте</p>
+        <a href="#" class="btn btn-with-arrow">Оставить отзыв</a>
+    </div>
+    <div class="review-grid">
+        @@for (var i = 0; i < 25; i++) {
+        <div class="review">
+            <div class="user">
+                <p class="name">Ирина</p>
+                <p class="date">12.09.2020</p>
+            </div>
+            <div class="comment">
+                <div class="text">
+                    <p>Очень быстрая обработка заказа и передача в пункт выдачи. Не один раз покупаю в этим магазине.
+                        Сталкивалася и с гарантийным обслуживанием. Все пока проходило на пять.</p>
+                </div>
+                <div class="rating">
+                    <div class="like">
+                        <span>123</span>
+                    </div>
+                    <div class="dislike">
+                        <span>123</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+    @@include('../global/custom-pagination.html')
+    @@include('../global/product-slider.html', {
+        mark: {
+        class: "new",
+        text: "new"
+        }
+    })
+</section>

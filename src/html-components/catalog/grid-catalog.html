@@ -1,0 +1,33 @@
+<section class="grid-catalog">
+    <div class="sort-filter">
+        <div class="sort-type">
+            <span>Сортировать:</span>
+            <a href="#">популярности</a>
+            <a href="#">цене</a>
+            <a href="#" class="active">поступлении</a>
+            <a href="#">имени</a>
+            <div class="sort-value">
+                <a href="#" class="up active"></a>
+                <a href="#" class="down"></a>
+            </div>
+        </div>
+        <a href="#" class="reset">Сбросить все</a>
+    </div>
+    <div class="grid">
+        @@for (var i = 0; i < 24; i++) {
+        <div class="product-card">
+            <a href="#" class="image">
+                <img src="img/product.png" alt="#">
+            </a>
+            <div class="mark new">new</div>
+            <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
+            <div class="price">
+                <p class="old-price">500 грн</p>
+                <p class="new-price">345грн</p>
+            </div>
+            <a href="#" class="btn btn-with-arrow">Купить</a>
+        </div>
+        }
+    </div>
+    @@include('../global/custom-pagination.html')
+</section>
