@@ -1,10 +1,32 @@
-aside
+aside.catalog-aside
   display: flex
   flex-direction: column
   padding: 25px 35px 65px 0
   box-sizing: border-box
   align-self: flex-start
   border-right: 1px solid #e1e1e1
+  @media (max-width: 1024px)
+    padding-right: 10px
+  @media (max-width: 767px)
+    position: fixed
+    top: 0
+    left: -100%
+    z-index: 11
+    background: #ffffff
+    width: auto
+    max-width: 320px
+    height: 100vh
+    overflow-y: scroll
+    box-sizing: border-box
+    padding: 15px 15px 15px 20px
+    transition: left .3s
+    &.active
+      left: 0
+      .close
+        display: block
+  @media (max-width: 380px)
+    width: 100%
+    max-width: none
   .custom-filter
     .filter-wrapper
       max-height: 310px
@@ -18,7 +40,7 @@ aside
         background-color: #989898
       .ocf-option-values
         height: max-content
-        padding: 0
+        padding: 0 5px 0 0
         margin: 0
         list-style: none
         display: flex
@@ -30,7 +52,11 @@ aside
           margin-bottom: 14px
           cursor: pointer
           font-size: 16px
+          line-height: 18px
           user-select: none
+          @media (max-width: 925px)
+            font-size: 12px
+            line-height: 14px
           &:hover input ~ span
             background-color: #FFCCD9
           input
@@ -93,6 +119,9 @@ aside
         margin: 0
         padding-left: 4px
         box-sizing: border-box
+        @media (max-width: 925px)
+          font-size: 12px
+          line-height: 14px
   .filter
     display: flex
     flex-direction: column
@@ -104,6 +133,8 @@ aside
       line-height: 140%
       text-transform: uppercase
       margin: 0 0 5px
+      padding-right: 10px
+      box-sizing: border-box
       position: relative
       cursor: pointer
       &:after
@@ -120,3 +151,11 @@ aside
         transition: transform .3s
       &.active:after
         transform: rotate(-90deg)
+  .close
+    position: fixed
+    top: 5px
+    right: 5px
+    width: 15px
+    height: 15px
+    background: url("../img/svg/close.svg") center center / 100% 100% no-repeat
+    display: none

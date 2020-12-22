@@ -47,10 +47,84 @@
                      <a href="#" class="bonus">
                          <img src="img/svg/present.svg" alt="">
                      </a>
-                     <a href="#" class="cart">
-                         <img src="img/svg/cart.svg" alt="">
-                         <span class="count">3</span>
-                     </a>
+                     <div class="cart">
+                         <div class="button" data-popup="cart-header">
+                             <img src="img/svg/cart.svg" alt="">
+                             <span class="count">3</span>
+                         </div>
+                         <div class="cart-header">
+    <p class="title">корзина <span>(1)</span></p>
+    <div class="cart-body">
+        <div class="elem">
+            <div class="image">
+                <img src="img/product.png" alt="#">
+            </div>
+            <div class="info">
+                <p class="name">Название товара, скорее всего в две строки</p>
+                <p class="code">код товара: <span>253698</span></p>
+                <p class="size">
+                    объем: <span>100ml</span>
+                </p>
+                <div class="bottom-info">
+                    <div class="count qty">
+                        <div class="button minus">-</div>
+                        <div class="quantity">
+                            <label>
+                                <input type="number" name="qty" value="3">
+                            </label>
+                        </div>
+                        <div class="button plus">+</div>
+                    </div>
+                    <div class="price">
+                        <p class="old-price">500 грн</p>
+                        <p class="new-price">345 грн</p>
+                    </div>
+                </div>
+            </div>
+            <div class="delete"></div>
+        </div>
+        <div class="elem">
+            <div class="image">
+                <img src="img/product.png" alt="#">
+            </div>
+            <div class="info">
+                <p class="name">Название товара, скорее всего в две строки</p>
+                <p class="code">код товара: <span>253698</span></p>
+                <p class="size">
+                    объем: <span>100ml</span>
+                </p>
+                <div class="bottom-info">
+                    <div class="count qty">
+                        <div class="button minus">-</div>
+                        <div class="quantity">
+                            <label>
+                                <input type="number" name="qty" value="3">
+                            </label>
+                        </div>
+                        <div class="button plus">+</div>
+                    </div>
+                    <div class="price">
+                        <p class="old-price">500 грн</p>
+                        <p class="new-price">345 грн</p>
+                    </div>
+                </div>
+            </div>
+            <div class="delete"></div>
+        </div>
+    </div>
+    <div class="links">
+        <a href="#">Введите промокод</a>
+        <a href="#">Введите номер дисконтной карты</a>
+    </div>
+    <div class="summ">
+        <span>Сумма заказа:</span>
+        <p>1500 грн</p>
+    </div>
+    <a href="" class="btn btn-with-arrow">Оформить заказ</a>
+    <a href="" class="btn continue">Продолжить покупки</a>
+    <div class="close">Закрыть</div>
+</div>
+                     </div>
                  </div>
                  <div id="search">
                      <button></button>
@@ -166,7 +240,7 @@
     
 </section>
     <main class="container-main container">
-        <aside>
+        <aside class="catalog-aside">
     <div class="custom-filter filter" data-hide>
         <div class="ocf-option-name active" data-btn>группа товаров</div>
         <div class="filter-wrapper" data-block>
@@ -420,6 +494,7 @@
             </div>
         </div>
     </div>
+    <div class="close"></div>
 </aside>
         <div class="container-small">
             <section class="grid-catalog">
@@ -435,7 +510,10 @@
                 <a href="#" class="down"></a>
             </div>
         </div>
-        <a href="#" class="reset">Сбросить все</a>
+        <div class="right-side">
+            <button class="filter-btn"></button>
+            <a href="#" class="reset">Сбросить все</a>
+        </div>
     </div>
     <div class="grid">
         
@@ -443,7 +521,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -456,7 +534,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -469,7 +547,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -482,7 +560,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -495,7 +573,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -508,7 +586,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -521,7 +599,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -534,7 +612,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -547,7 +625,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -560,7 +638,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -573,7 +651,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -586,7 +664,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -599,7 +677,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -612,7 +690,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -625,7 +703,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -638,7 +716,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -651,7 +729,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -664,7 +742,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -677,7 +755,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -690,7 +768,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -703,7 +781,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -716,7 +794,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -729,7 +807,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>
@@ -742,7 +820,7 @@
             <a href="#" class="image">
                 <img src="img/product.png" alt="#">
             </a>
-            <div class="mark new">new</div>
+            <div class="mark recommend">recommend</div>
             <a href="#" class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</a>
             <div class="price">
                 <p class="old-price">500 грн</p>

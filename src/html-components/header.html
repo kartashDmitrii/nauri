@@ -35,10 +35,13 @@
                      <a href="#" class="bonus">
                          <img src="img/svg/present.svg" alt="">
                      </a>
-                     <a href="#" class="cart">
-                         <img src="img/svg/cart.svg" alt="">
-                         <span class="count">3</span>
-                     </a>
+                     <div class="cart">
+                         <div class="button" data-popup="cart-header">
+                             <img src="img/svg/cart.svg" alt="">
+                             <span class="count">3</span>
+                         </div>
+                         @@include('./global/cart-header.html')
+                     </div>
                  </div>
                  <div id="search">
                      <button></button>

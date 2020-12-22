@@ -15,7 +15,9 @@
         @@include('./html-components/index/banner.html')
         @@include('./html-components/index/new-products.html')
         @@include('./html-components/index/sale-products.html')
-        @@include('./html-components/index/recommend-products.html')
+        @@include('./html-components/global/recommend-products.html', {
+            'title': 'МЫ РЕКОМЕНДУЕМ'
+        })
         @@include('./html-components/index/blog.html')
         @@include('./html-components/index/brands.html')
     </main>
