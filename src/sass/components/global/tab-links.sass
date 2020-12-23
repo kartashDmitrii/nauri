@@ -1,0 +1,29 @@
+section.tab-links
+  padding-bottom: 3px
+  border-bottom: 1px solid #e6e6e6
+  margin-bottom: 30px
+  ul
+    margin: 0 -5px
+    padding: 0
+    list-style: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    @media (max-width: 576px)
+      justify-content: flex-start
+    li
+      font-size: 18px
+      line-height: 29px
+      color: #000
+      padding-bottom: 3px
+      margin: 0 5px
+      &.active
+        font-weight: 500
+        color: $second-color
+      @media (max-width: 480px)
+        font-size: 14px
+        line-height: 21px
+      a
+        color: inherit
+        text-decoration: inherit
