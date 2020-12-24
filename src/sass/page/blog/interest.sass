@@ -1,0 +1,54 @@
+section.interest
+  display: flex
+  flex-direction: column
+  margin-bottom: 100px
+  @media (max-width: 479px)
+    margin-bottom: 25px
+  .title
+    font-weight: 500
+    font-size: 22px
+    line-height: 140%
+    text-transform: uppercase
+    color: $text-color
+    margin: 0 0 32px
+    text-align: center
+  .grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-rows: auto
+    grid-gap: 32px
+    @media (max-width: 920px)
+      grid-gap: 16px
+    @media (max-width: 767px)
+      grid-gap: 10px
+    @media (max-width: 479px)
+      grid-template-columns: 1fr
+    .elem
+      display: flex
+      flex-direction: column
+      .image
+        width: 100%
+        height: 0
+        padding-bottom: 43.8%
+        margin-bottom: 12px
+        position: relative
+        img
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          object-fit: cover
+          object-position: center
+      .name
+        font-size: 24px
+        line-height: 29px
+        text-transform: uppercase
+        color: $text-color
+        text-decoration: none
+        @media (max-width: 920px)
+          font-size: 18px
+          line-height: 21px
+        @media (max-width: 767px)
+          font-size: 14px
+          line-height: 16px

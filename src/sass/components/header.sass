@@ -113,6 +113,8 @@ header
         display: flex
         flex-direction: column
         align-items: flex-end
+        @media (max-width: 480px)
+          margin-left: 15px
         .links
           display: flex
           margin-bottom: 15px
@@ -120,6 +122,8 @@ header
             display: flex
             margin-right: 25px
             cursor: pointer
+            &.cart
+              margin-right: 0
             &>img
               max-width: 23px
               max-height: 23px

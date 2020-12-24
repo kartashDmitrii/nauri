@@ -25,6 +25,7 @@ export default class popupFunc {
     }
     openPopup(event){
         if(event.target.dataset.stopEvent === undefined) {
+            event.preventDefault();
             if (Array.isArray(this.popup)){
                 this.popup.forEach( elem => {
                     elem.classList.add('active');

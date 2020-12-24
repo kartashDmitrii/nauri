@@ -7,4 +7,3 @@ if (document.querySelector('aside.catalog-aside')){
 if (document.querySelector('section.product-tabs')){
     new tabs([...document.querySelectorAll('section.product-tabs .tab-link')], [...document.querySelectorAll('section.product-tabs .tab')])
 }
-console.log(document.querySelectorAll('.big-hor-news'))
