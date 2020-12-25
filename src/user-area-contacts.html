@@ -5,22 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>namuri bonuses</title>
+    <title>namuri product</title>
     <link rel="stylesheet" href="css/lib.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 @@include('./html-components/header.html')
 @@include('./html-components/global/breadcrumbs.html', {
-"back": true
+"back": false
 })
-<main>
-    @@include('./html-components/bonuses/bonus-system.html')
-    @@include('./html-components/bonuses/steps.html')
-    @@include('./html-components/bonuses/bonus-banner.html')
+<main class="container-main container">
+    @@include('./html-components/personal-area/user-aside.html')
+    <div class="container-small">
+        @@include('./html-components/personal-area/user-contacts.html')
+    </div>
 </main>
 @@include('./html-components/footer.html')
-<section class="popup-wrapper close">
+<section class="popup-wrapper close wrapper">
     <div class="close"></div>
 </section>
 <script src="js/lib.min.js"></script>

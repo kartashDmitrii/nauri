@@ -1,0 +1,65 @@
+section.bonus-system
+  display: flex
+  align-items: center
+  margin-bottom: 35px
+  @media (max-width: 1024px)
+    flex-direction: column
+  .text
+    width: 560px
+    min-height: 460px
+    display: flex
+    flex-direction: column
+    margin-top: 15px
+    @media (max-width: 1024px)
+      width: 100%
+      min-height: auto
+      margin-bottom: 15px
+      margin-top: 0
+    .section-title
+      margin-bottom: 14px
+    p
+      font-size: 16px
+      line-height: 140%
+      color: $text-color
+      margin: 0 0 10px
+    .note
+      font-size: 13px
+      line-height: 15px
+      margin: 0
+    .bonus-list
+      display: flex
+      flex-direction: column
+      list-style: none
+      margin: 0 0 10px
+      padding: 0
+      li
+        font-size: 16px
+        line-height: 18px
+        color: $text-color
+        margin: 0 0 7px
+        span
+          color: $main-color
+          margin-right: 3px
+        &:last-child
+          margin-bottom: 0
+  .image
+    position: absolute
+    top: 0
+    left: 586px
+    width: 720px
+    height: 460px
+    @media (max-width: 1024px)
+      position: relative
+      left: 0
+    @media (max-width: 576px)
+      width: 100%
+      height: 0
+      padding-bottom: 69%
+    img
+      position: absolute
+      top: 0
+      right: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center

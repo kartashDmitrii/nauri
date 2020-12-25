@@ -1,0 +1,63 @@
+aside.user-aside
+  display: flex
+  flex-direction: column
+  padding-right: 20px
+  border-right: 1px solid #d0d0d0
+  margin-bottom: 100px
+  .user
+    display: flex
+    align-items: center
+    margin-bottom: 40px
+    .image
+      width: 70px
+      height: 70px
+      margin-right: 10px
+      img
+        object-fit: cover
+        object-position: center
+    .info
+      width: calc(100% - 80px)
+      display: flex
+      flex-direction: column
+      .name
+        margin: 0 0 3px
+        font-size: 16px
+        line-height: 18px
+        color: $text-color
+      .change-photo
+        font-weight: 300
+        font-size: 11px
+        line-height: 18px
+        color: #a1a1a1
+        text-decoration: underline
+        margin: 0
+  .tabs
+    display: flex
+    flex-direction: column
+    margin: 0 0 30px
+    padding: 0
+    list-style: none
+    li
+      font-size: 16px
+      line-height: 20px
+      color: $text-color
+      margin: 0 0 5px
+      a
+        color: inherit
+        text-decoration: inherit
+      &.active
+        font-weight: 500
+        color: $main-color
+      &:last-child
+        margin-bottom: 0
+  .card
+    width: 200px
+    height: 40px
+    margin-bottom: 35px
+  .log-out
+    font-weight: 300
+    font-size: 13px
+    line-height: 140%
+    color: $text-color
+    margin: 0
+    text-decoration: none

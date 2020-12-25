@@ -3,13 +3,17 @@ export default class hideList{
         this.fixHeight = fixHeight
         this.listBlock = listBlock;
         this.list = this.listBlock.querySelector('[data-block]');
-        this.listBlock.querySelector('[data-btn]').addEventListener('click', ()=>{this.showBlock()})
+        this.listBlock.querySelector('[data-btn]').addEventListener('click', (e)=>{this.showBlock(e)})
         if (this.listBlock.querySelector('[data-btn]').classList.contains('active')) {
             this.fixHeight === null ? this.list.style.height = `${this.list.scrollHeight}px` : this.list.style.height = `${this.fixHeight}px`;
             this.list.classList.add('active')
         }
+        if (this.list.querySelector('.close')){
+            this.list.querySelector('.close').addEventListener('click', (e)=>{this.showBlock(e)})
+        }
     }
-    showBlock(){
+    showBlock(e){
+        e.preventDefault();
         let blockHeight = parseInt(window.getComputedStyle(this.list).getPropertyValue('height'));
         if (blockHeight === 0){
             this.fixHeight === null ? this.list.style.height = `${this.list.scrollHeight}px` : this.list.style.height = `${this.fixHeight}px`;

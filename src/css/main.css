@@ -3536,3 +3536,342 @@ section.wholesale {
         left: 0;
         top: 7.5px;
         transform: skew(-10deg, 0); }
+
+section.bonus-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 95px; }
+  section.bonus-banner .banner {
+    max-width: 1030px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    section.bonus-banner .banner .image {
+      width: 100%;
+      height: 0;
+      padding-bottom: 51.74%;
+      position: relative;
+      margin-bottom: 15px; }
+      section.bonus-banner .banner .image img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center; }
+    section.bonus-banner .banner .alert {
+      margin: 0 0 10px;
+      font-size: 13px;
+      line-height: 20px;
+      color: #000; }
+      section.bonus-banner .banner .alert span {
+        font-weight: 700;
+        color: #F3828C; }
+      section.bonus-banner .banner .alert:last-child {
+        margin-bottom: 0; }
+
+section.steps {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px; }
+  section.steps .section-title {
+    margin-bottom: 50px; }
+  section.steps .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    margin-bottom: 15px; }
+    @media (max-width: 767px) {
+      section.steps .grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto; } }
+    section.steps .grid .step {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 25px 10px 12px 25px;
+      box-sizing: border-box; }
+      @media (max-width: 480px) {
+        section.steps .grid .step {
+          padding: 10px; } }
+      section.steps .grid .step .number {
+        font-size: 180px;
+        line-height: 127px;
+        color: #F3828C;
+        position: absolute;
+        top: 0;
+        left: -7px;
+        overflow: hidden; }
+        @media (max-width: 970px) {
+          section.steps .grid .step .number {
+            font-size: 120px; } }
+        @media (max-width: 480px) {
+          section.steps .grid .step .number {
+            position: static; } }
+        section.steps .grid .step .number:before {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          right: -5px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 127px 180px;
+          border-color: transparent transparent #ffffff transparent;
+          opacity: .9; }
+      section.steps .grid .step .textfield {
+        margin-left: 230px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px; }
+        @media (max-width: 970px) {
+          section.steps .grid .step .textfield {
+            margin-left: 150px; } }
+        @media (max-width: 480px) {
+          section.steps .grid .step .textfield {
+            margin-left: 0; } }
+        section.steps .grid .step .textfield > b {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: #3E3939;
+          margin: 0 0 14px; }
+        section.steps .grid .step .textfield .info {
+          display: flex;
+          flex-direction: column;
+          position: relative; }
+          section.steps .grid .step .textfield .info p {
+            font-size: 16px;
+            line-height: 20px;
+            color: #3E3939;
+            margin: 0 0 3px; }
+          section.steps .grid .step .textfield .info .details {
+            display: flex;
+            flex-direction: column; }
+            section.steps .grid .step .textfield .info .details a {
+              align-self: flex-end;
+              font-size: 13px;
+              line-height: 20px;
+              text-decoration: underline;
+              color: #727272;
+              margin: 0; }
+            section.steps .grid .step .textfield .info .details .text {
+              overflow: hidden;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              top: 0;
+              left: -85px;
+              max-width: 430px;
+              width: 100vw;
+              padding: 0 12px;
+              background: #FFFFFF;
+              z-index: 2;
+              height: 0;
+              transition: height .3s, padding .3s; }
+              @media (max-width: 767px) {
+                section.steps .grid .step .textfield .info .details .text {
+                  left: 0;
+                  top: 0;
+                  bottom: 0;
+                  margin: auto;
+                  width: 100%;
+                  max-width: none; } }
+              section.steps .grid .step .textfield .info .details .text .close {
+                align-self: flex-end; }
+              section.steps .grid .step .textfield .info .details .text.active {
+                padding: 20px 12px; }
+  section.steps .alert {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #3E3939;
+    margin: 0; }
+    section.steps .alert span {
+      font-weight: 700;
+      color: #F3828C;
+      margin-right: 3px; }
+
+section.bonus-system {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px; }
+  @media (max-width: 1024px) {
+    section.bonus-system {
+      flex-direction: column; } }
+  section.bonus-system .text {
+    width: 560px;
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px; }
+    @media (max-width: 1024px) {
+      section.bonus-system .text {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 15px;
+        margin-top: 0; } }
+    section.bonus-system .text .section-title {
+      margin-bottom: 14px; }
+    section.bonus-system .text p {
+      font-size: 16px;
+      line-height: 140%;
+      color: #3E3939;
+      margin: 0 0 10px; }
+    section.bonus-system .text .note {
+      font-size: 13px;
+      line-height: 15px;
+      margin: 0; }
+    section.bonus-system .text .bonus-list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin: 0 0 10px;
+      padding: 0; }
+      section.bonus-system .text .bonus-list li {
+        font-size: 16px;
+        line-height: 18px;
+        color: #3E3939;
+        margin: 0 0 7px; }
+        section.bonus-system .text .bonus-list li span {
+          color: #F3828C;
+          margin-right: 3px; }
+        section.bonus-system .text .bonus-list li:last-child {
+          margin-bottom: 0; }
+  section.bonus-system .image {
+    position: absolute;
+    top: 0;
+    left: 586px;
+    width: 720px;
+    height: 460px; }
+    @media (max-width: 1024px) {
+      section.bonus-system .image {
+        position: relative;
+        left: 0; } }
+    @media (max-width: 576px) {
+      section.bonus-system .image {
+        width: 100%;
+        height: 0;
+        padding-bottom: 69%; } }
+    section.bonus-system .image img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+
+aside.user-aside {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  border-right: 1px solid #d0d0d0;
+  margin-bottom: 100px; }
+  aside.user-aside .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; }
+    aside.user-aside .user .image {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px; }
+      aside.user-aside .user .image img {
+        object-fit: cover;
+        object-position: center; }
+    aside.user-aside .user .info {
+      width: calc(100% - 80px);
+      display: flex;
+      flex-direction: column; }
+      aside.user-aside .user .info .name {
+        margin: 0 0 3px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #3E3939; }
+      aside.user-aside .user .info .change-photo {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 18px;
+        color: #a1a1a1;
+        text-decoration: underline;
+        margin: 0; }
+  aside.user-aside .tabs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none; }
+    aside.user-aside .tabs li {
+      font-size: 16px;
+      line-height: 20px;
+      color: #3E3939;
+      margin: 0 0 5px; }
+      aside.user-aside .tabs li a {
+        color: inherit;
+        text-decoration: inherit; }
+      aside.user-aside .tabs li.active {
+        font-weight: 500;
+        color: #F3828C; }
+      aside.user-aside .tabs li:last-child {
+        margin-bottom: 0; }
+  aside.user-aside .card {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 35px; }
+  aside.user-aside .log-out {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 140%;
+    color: #3E3939;
+    margin: 0;
+    text-decoration: none; }
+
+section.user-contacts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px; }
+  section.user-contacts .section-title {
+    margin-bottom: 15px; }
+  section.user-contacts p {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: #3E3939;
+    margin: 0 0 15px; }
+  section.user-contacts .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+    grid-row-gap: 12px;
+    margin-bottom: 40px; }
+    section.user-contacts .grid .block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      section.user-contacts .grid .block label {
+        width: 315px;
+        margin-right: 15px;
+        display: flex; }
+        section.user-contacts .grid .block label input {
+          width: 100%;
+          padding: 5px 10px;
+          box-sizing: border-box;
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 20px;
+          color: #595959;
+          border: 1px solid #D1D1D1;
+          outline: none; }
+      section.user-contacts .grid .block .change {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 18px;
+        color: #999;
+        text-decoration: underline; }
+  section.user-contacts .btn {
+    width: 165px;
+    height: 40px;
+    align-self: flex-end; }

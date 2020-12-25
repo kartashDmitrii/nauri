@@ -1,0 +1,46 @@
+section.user-contacts
+  display: flex
+  flex-direction: column
+  padding-left: 15px
+  .section-title
+    margin-bottom: 15px
+  p
+    font-weight: 300
+    font-size: 13px
+    line-height: 20px
+    color: $text-color
+    margin: 0 0 15px
+  .grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 70px
+    grid-row-gap: 12px
+    margin-bottom: 40px
+    .block
+      display: flex
+      justify-content: space-between
+      align-items: center
+      label
+        width: 315px
+        margin-right: 15px
+        display: flex
+        input
+          width: 100%
+          padding: 5px 10px
+          box-sizing: border-box
+          font-weight: 300
+          font-size: 11px
+          line-height: 20px
+          color: #595959
+          border: 1px solid #D1D1D1
+          outline: none
+      .change
+        font-weight: 300
+        font-size: 11px
+        line-height: 18px
+        color: #999
+        text-decoration: underline
+  .btn
+    width: 165px
+    height: 40px
+    align-self: flex-end
