@@ -39,9 +39,11 @@ if (document.querySelector('.product-slider')){
     })
 }
 if (document.querySelector('.header')){
-    new popupFunc(document.querySelector('header .header .mobile-buttons .menu'), [document.querySelector('.header .contacts'), document.querySelector('.header .refs')]);
-    new popupFunc(document.querySelector('header .header .mobile-buttons .search'), document.querySelector('#search'));
     new popupFunc(document.querySelector('header .header .cart .button'), document.querySelector('.header .cart-header'), false)
+    if (window.screen.width < 768) {
+        new popupFunc(document.querySelector('header .header .mobile-buttons .menu'), [document.querySelector('.header .contacts'), document.querySelector('.header .refs')]);
+        new popupFunc(document.querySelector('header .header .mobile-buttons .search'), document.querySelector('#search'));
+    }
 }
 
 if (document.querySelector('.header li.has_child')){

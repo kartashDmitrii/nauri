@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>namuri return and exchange</title>
+    <title>namuri user-area</title>
     <link rel="stylesheet" href="css/lib.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -264,40 +264,78 @@
         <li class="current"><span>Макияж</span></li>
     </ul>
     
-    <a href="/">Вернуться назад</a>
-    
 </section>
-<main>
-    <section class="return-and-exchange">
-    <div class="container">
-        <span class="section-title">Возврат и обмен</span>
-        <div class="block">
-            <b>Возврат осуществляется в таких случаях:</b>
-            <ul>
-                <li>
-                    Заводской брак продукции подлежит возврату и замене Все пересылки такого товара осуществляются за 
-                    счет магазина</li>
-                <li>В случае пересорта или если вы получили не тот продукт что заказывали - сообщите нам об этом сразу 
-                    при получении. Замена осуществляется за счет магазина! В кратчайшие сроки мы отправим вам нужный 
-                    продукт</li>
-                <li>В случае повреждения товара во время транспортировки мы производим полную компенсацию при соблюдении 
-                    обязательных условий:</li>
-            </ul>
-            <div class="info">
-                <p>- посылка была вскрыта в офисе Новой Почты (при курьере,
-                    в случае курьерской доставки) и был составлен акт осмотра работниками Новой Почты о повреждении
-                    посылки.</p>
-                <p>- магазин производит компенсацию, если по этой же посылке Вы не получали компенсацию со стороны
-                    перевозчика</p>
+<main class="container-main user-area container">
+    <aside class="user-aside">
+    <div class="user">
+        <div class="image">
+            <img src="img/user.png" alt="">
+        </div>
+        <div class="info">
+            <p class="name">Иванова Иванна</p>
+            <a href="#" class="change-photo">Изменить фото</a>
+        </div>
+    </div>
+    <ul class="tabs">
+        <li><a href="#">Личные данные</a></li>
+        <li class="active"><a href="#">Мои бонусы</a></li>
+        <li><a href="#">История заказов</a></li>
+    </ul>
+    <div class="card">
+        <a href="#" class="btn btn-with-link">Иванна Иванова</a>
+        <span>номер моего дисконта</span>
+    </div>
+    <a href="#" class="log-out">Выйти</a>
+</aside>
+    <div class="container-small">
+        <section class="user-bonuses">
+    <span class="section-title">Мои бонусы</span>
+    <div class="grid">
+        <div class="cashbacks">
+            <p class="title">Мой Кэшбэк</p>
+            <div class="cashback-summ-total">2400 грн</div>
+            <div class="personal-cashback block">
+                <p>Личный</p>
+                <span class="summ">1200 грн</span>
+                <div class="promo">
+                    <span>Промокод</span>
+                     <div class="code">
+                         <p>kgkld25</p>
+                         <button></button>
+                     </div>
+                </div>
             </div>
-            <p class="alert">Просим Вас внимательно осматривать заказы, при получении!</p>
-            <div class="annotation">
-                <p>Согласно Закону "O Защите прав потребителей" парфюмерно-косметические товары входят в перечень
-                    непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену.</p>
+            <div class="friend-cashback block">
+                <p>От друзей</p>
+                <span class="summ">1200 грн</span>
+                <div class="promo">
+                    <span>Промокод</span>
+                     <div class="code">
+                         <p>kgkld25</p>
+                         <button></button>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="discount small-block">
+            <p>дисконт</p>
+            <span class="summ">3%</span>
+            <div class="alert">
+                <span>Обратите внимание!</span>
+                <p>К скидке в 5% вам нужно купить товар на сумму 1000 грн</p>
+            </div>
+        </div>
+        <div class="birthday-gift small-block">
+            <p>к вашему дню рождения</p>
+            <span class="summ">120 дней</span>
+            <div class="alert">
+                <span>Воспользуйтесь скидкой 12%!</span>
+                <p>Сделайте заказ в течении 3 дней до и 3 дня после вашего праздника </p>
             </div>
         </div>
     </div>
 </section>
+    </div>
 </main>
 <footer>
     <div class="container">
@@ -363,7 +401,7 @@
         </div>
     </div>
 </footer>
-<section class="popup-wrapper close">
+<section class="popup-wrapper close wrapper">
     <div class="close"></div>
 </section>
 <script src="js/lib.min.js"></script>

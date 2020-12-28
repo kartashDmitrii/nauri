@@ -1,10 +1,21 @@
 aside.user-aside
-  display: flex
-  flex-direction: column
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-areas: 'user' 'tabs' 'card' 'log-out'
+  grid-auto-rows: auto
   padding-right: 20px
   border-right: 1px solid #d0d0d0
-  margin-bottom: 100px
+  margin-bottom: 90px
+  height: max-content
+  @media (max-width: 767px)
+    grid-template-columns: calc(100% - 200px) 200px
+    grid-template-areas: 'user user' 'tabs tabs' 'log-out card'
+    border-right: none
+    border-bottom: 1px solid #d0d0d0
+    margin-bottom: 15px
+    padding-bottom: 15px
   .user
+    grid-area: user
     display: flex
     align-items: center
     margin-bottom: 40px
@@ -32,11 +43,18 @@ aside.user-aside
         text-decoration: underline
         margin: 0
   .tabs
+    grid-area: tabs
     display: flex
     flex-direction: column
     margin: 0 0 30px
     padding: 0
     list-style: none
+    @media (max-width: 767px)
+      margin-bottom: 15px
+      flex-direction: row
+      justify-content: space-between
+    @media (max-width: 440px)
+      flex-direction: column
     li
       font-size: 16px
       line-height: 20px
@@ -51,13 +69,37 @@ aside.user-aside
       &:last-child
         margin-bottom: 0
   .card
-    width: 200px
-    height: 40px
+    grid-area: card
+    display: flex
+    flex-direction: column
     margin-bottom: 35px
+    .btn
+      max-width: 200px
+      width: 100%
+      height: 40px
+      box-sizing: border-box
+    span
+      font-weight: 300
+      font-size: 13px
+      line-height: 13px
+      color: $text-color
+      margin: 0
+      max-width: 200px
+      width: 100%
+      display: inline-block
+      text-align: center
+    @media (max-width: 767px)
+      align-items: flex-end
+      margin-bottom: 0
   .log-out
+    grid-area: log-out
     font-weight: 300
     font-size: 13px
     line-height: 140%
     color: $text-color
     margin: 0
     text-decoration: none
+    @media (max-width: 767px)
+      display: flex
+      align-items: center
+      height: 40px

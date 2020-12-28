@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>namuri return and exchange</title>
+    <title>namuri user-area</title>
     <link rel="stylesheet" href="css/lib.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -264,40 +264,149 @@
         <li class="current"><span>Макияж</span></li>
     </ul>
     
-    <a href="/">Вернуться назад</a>
-    
 </section>
-<main>
-    <section class="return-and-exchange">
-    <div class="container">
-        <span class="section-title">Возврат и обмен</span>
-        <div class="block">
-            <b>Возврат осуществляется в таких случаях:</b>
-            <ul>
-                <li>
-                    Заводской брак продукции подлежит возврату и замене Все пересылки такого товара осуществляются за 
-                    счет магазина</li>
-                <li>В случае пересорта или если вы получили не тот продукт что заказывали - сообщите нам об этом сразу 
-                    при получении. Замена осуществляется за счет магазина! В кратчайшие сроки мы отправим вам нужный 
-                    продукт</li>
-                <li>В случае повреждения товара во время транспортировки мы производим полную компенсацию при соблюдении 
-                    обязательных условий:</li>
-            </ul>
-            <div class="info">
-                <p>- посылка была вскрыта в офисе Новой Почты (при курьере,
-                    в случае курьерской доставки) и был составлен акт осмотра работниками Новой Почты о повреждении
-                    посылки.</p>
-                <p>- магазин производит компенсацию, если по этой же посылке Вы не получали компенсацию со стороны
-                    перевозчика</p>
+<main class="container-main user-area container">
+    <aside class="user-aside">
+    <div class="user">
+        <div class="image">
+            <img src="img/user.png" alt="">
+        </div>
+        <div class="info">
+            <p class="name">Иванова Иванна</p>
+            <a href="#" class="change-photo">Изменить фото</a>
+        </div>
+    </div>
+    <ul class="tabs">
+        <li><a href="#">Личные данные</a></li>
+        <li class="active"><a href="#">Мои бонусы</a></li>
+        <li><a href="#">История заказов</a></li>
+    </ul>
+    <div class="card">
+        <a href="#" class="btn">Заказать карту</a>
+    </div>
+    <a href="#" class="log-out">Выйти</a>
+</aside>
+    <div class="container-small">
+        <section class="user-orders">
+    <span class="section-title">История заказов</span>
+    <div class="selects">
+        <div class="select">
+            <p>Выберите период заказа:</p>
+            <label>
+                <select name="date">
+                    <option value="month">За этот месяц</option>
+                    <option value="month">За этот месяц</option>
+                    <option value="month">За этот месяц</option>
+                    <option value="month">За этот месяц</option>
+                </select>
+            </label>
+        </div>
+        <div class="select">
+            <p>Выберите статус заказа:</p>
+            <label>
+                <select name="status">
+                    <option value="month">Подтвержденный</option>
+                    <option value="month">Подтвержденный</option>
+                    <option value="month">Подтвержденный</option>
+                    <option value="month">Подтвержденный</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <div class="order-flex">
+        <div class="order">
+            <p class="number">Номер заказа: <span>236533</span></p>
+            <p class="date">14.02.2020, 12:54</p>
+            <div class="flex">
+                <div class="list">
+                    <div class="products">
+                        <div class="product">
+                            <div class="image">
+                                <img src="img/product.png" alt="#">
+                            </div>
+                            <div class="info">
+                                <p class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</p>
+                                <p class="size">500 ml</p>
+                            </div>
+                            <p class="count">1 шт</p>
+                            <p class="price">1250 грн</p>
+                        </div>
+                        <div class="product">
+                            <div class="image">
+                                <img src="img/product.png" alt="#">
+                            </div>
+                            <div class="info">
+                                <p class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</p>
+                                <p class="size">500 ml</p>
+                            </div>
+                            <p class="count">1 шт</p>
+                            <p class="price">1250 грн</p>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <span>Итого:</span>
+                        <p>2500 грн</p>
+                    </div>
+                </div>
+                <div class="status">
+                    <ul>
+                        <li><span>Доставка:</span>16.02.2020</li>
+                        <li><span>Оплата:</span>на карту привата</li>
+                        <li><span>Адрес доставки:</span>г. Киев, отд. Новой почты № 9, 098 255 25 22</li>
+                        <li class="complete"><span>Статус:</span>Доставлено</li>
+                        <li><span>ТТН:</span>59005663365422</li>
+                    </ul>
+                </div>
             </div>
-            <p class="alert">Просим Вас внимательно осматривать заказы, при получении!</p>
-            <div class="annotation">
-                <p>Согласно Закону "O Защите прав потребителей" парфюмерно-косметические товары входят в перечень
-                    непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену.</p>
+        </div>
+        <div class="order">
+            <p class="number">Номер заказа: <span>236533</span></p>
+            <p class="date">14.02.2020, 12:54</p>
+            <div class="flex">
+                <div class="list">
+                    <div class="products">
+                        <div class="product">
+                            <div class="image">
+                                <img src="img/product.png" alt="#">
+                            </div>
+                            <div class="info">
+                                <p class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</p>
+                                <p class="size">500 ml</p>
+                            </div>
+                            <p class="count">1 шт</p>
+                            <p class="price">1250 грн</p>
+                        </div>
+                        <div class="product">
+                            <div class="image">
+                                <img src="img/product.png" alt="#">
+                            </div>
+                            <div class="info">
+                                <p class="name">Мягкий пилинг-гель Manyo Factory Peeling Gel</p>
+                                <p class="size">500 ml</p>
+                            </div>
+                            <p class="count">1 шт</p>
+                            <p class="price">1250 грн</p>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <span>Итого:</span>
+                        <p>2500 грн</p>
+                    </div>
+                </div>
+                <div class="status">
+                    <ul>
+                        <li><span>Доставка:</span>16.02.2020</li>
+                        <li><span>Оплата:</span>на карту привата</li>
+                        <li><span>Адрес доставки:</span>г. Киев, отд. Новой почты № 9, 098 255 25 22</li>
+                        <li class="complete"><span>Статус:</span>Доставлено</li>
+                        <li><span>ТТН:</span>59005663365422</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
+    </div>
 </main>
 <footer>
     <div class="container">
@@ -363,7 +472,7 @@
         </div>
     </div>
 </footer>
-<section class="popup-wrapper close">
+<section class="popup-wrapper close wrapper">
     <div class="close"></div>
 </section>
 <script src="js/lib.min.js"></script>

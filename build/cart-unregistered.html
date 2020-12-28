@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>namuri product</title>
+    <title>namuri cart</title>
     <link rel="stylesheet" href="css/lib.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -149,7 +149,7 @@
         <p>1500 грн</p>
     </div>
     <a href="" class="btn btn-with-arrow">Оформить заказ</a>
-    <a href="" class="btn continue">Продолжить покупки</a>
+    <a href="" class="btn continue close">Продолжить покупки</a>
     <div class="close">Закрыть</div>
 </div>
                      </div>
@@ -258,45 +258,77 @@
         </div>
     </div>
 </header>
-<section class="breadcrumbs container">
-    <ul>
-        <li><a href="/">Главная</a></li>
-        <li class="current"><span>Макияж</span></li>
-    </ul>
-    
+<main>
+    <div class="cart-main-page container">
+        <section class="cart-form">
+    <span class="section-title">Оформление заказа</span>
+    <form>
+        <div class="form-block">
+            <label>
+                <input type="text" placeholder="Введите фамилию" name="surname">
+            </label>
+            <label>
+                <input type="text" placeholder="Введите имя" name="name">
+            </label>
+            <label>
+                <input type="tel" placeholder="Введите телефон" name="phone">
+            </label>
+            <label>
+                <input type="email" placeholder="Введите e-mail" name="email">
+            </label>
+        </div>
+        <div class="pay-method radio-block">
+            <p>Выберите способ оплаты</p>
+            <label>
+                Картой Visa или Master Card с помощью платежной системы на сайте namuri.com.ua
+                <input type="radio" name="pay-method" value="card">
+                <span></span>
+            </label>
+            <label>
+                Наличными в пункте самовывоза (для Харькова)
+                <input type="radio" name="pay-method" value="self">
+                <span></span>
+            </label>
+            <label>
+                На карту Приват банка принимаем полную оплату заказа или предоплату (в случае наложенного платежа)
+                <input type="radio" name="pay-method" value="privat">
+                <span></span>
+            </label>
+            <label>
+                На карту Монобанка принимаем полную оплату заказа или предоплату (в случае наложенного платежа)
+                <input type="radio" name="pay-method" value="mono">
+                <span></span>
+            </label>
+        </div>
+        <div class="delivery-method radio-block">
+            <p>Выберите способ доставки</p>
+            <label>
+                Самовывоз (для Харькова)
+                <input type="radio" name="delivery-method" value="self">
+                <span></span>
+            </label>
+            <label>
+                Новая Почта
+                <input type="radio" name="delivery-method" value="post">
+                <span></span>
+            </label>
+            <label>
+                Justin
+                <input type="radio" name="delivery-method" value="justin">
+                <span></span>
+            </label>
+        </div>
+        <div class="comment">
+            <p>Комментарий</p>
+            <label>
+                <textarea name="radio" placeholder="Введите комментарий"></textarea>
+            </label>
+        </div>
+    </form>
 </section>
-<main class="container-main container">
-    <aside class="user-aside">
-    <div class="user">
-        <div class="image">
-            <img src="img/user.png" alt="">
-        </div>
-        <div class="info">
-            <p class="name"></p>
-            <a href="#" class="change-photo">Изменить фото</a>
-        </div>
-    </div>
-    <ul class="tabs">
-        <li><a href="#">Личные данные</a></li>
-        <li><a href="#">Мои бонусы</a></li>
-        <li><a href="#">История заказов</a></li>
-    </ul>
-    <div class="card">
-        <a href="#" class="btn">Заказать карту</a>
-    </div>
-    <a href="#" class="log-out">Выйти</a>
-</aside>
-    <div class="container-small">
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+        <section class="cart">
 
-</body>
-</html>
+</section>
     </div>
 </main>
 <footer>
@@ -363,7 +395,7 @@
         </div>
     </div>
 </footer>
-<section class="popup-wrapper close wrapper">
+<section class="popup-wrapper close">
     <div class="close"></div>
 </section>
 <script src="js/lib.min.js"></script>

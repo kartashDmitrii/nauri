@@ -5,23 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>namuri user-area</title>
+    <title>namuri congratulations</title>
     <link rel="stylesheet" href="css/lib.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 @@include('./html-components/header.html')
-@@include('./html-components/global/breadcrumbs.html', {
-"back": false
-})
-<main class="container-main user-area container">
-    @@include('./html-components/user-area/user-aside.html')
-    <div class="container-small">
-        @@include('./html-components/user-area/user-contacts.html')
-    </div>
+<main>
+    @@include('./html-components/congratulations/congratulations.html')
 </main>
 @@include('./html-components/footer.html')
-<section class="popup-wrapper close wrapper">
+<section class="popup-wrapper close">
     <div class="close"></div>
 </section>
 <script src="js/lib.min.js"></script>

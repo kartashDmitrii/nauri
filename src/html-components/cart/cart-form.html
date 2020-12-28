@@ -1,0 +1,66 @@
+<section class="cart-form">
+    <span class="section-title">Оформление заказа</span>
+    <form>
+        <div class="form-block">
+            <label>
+                <input type="text" placeholder="Введите фамилию" name="surname">
+            </label>
+            <label>
+                <input type="text" placeholder="Введите имя" name="name">
+            </label>
+            <label>
+                <input type="tel" placeholder="Введите телефон" name="phone">
+            </label>
+            <label>
+                <input type="email" placeholder="Введите e-mail" name="email">
+            </label>
+        </div>
+        <div class="pay-method radio-block">
+            <p>Выберите способ оплаты</p>
+            <label>
+                Картой Visa или Master Card с помощью платежной системы на сайте namuri.com.ua
+                <input type="radio" name="pay-method" value="card">
+                <span></span>
+            </label>
+            <label>
+                Наличными в пункте самовывоза (для Харькова)
+                <input type="radio" name="pay-method" value="self">
+                <span></span>
+            </label>
+            <label>
+                На карту Приват банка принимаем полную оплату заказа или предоплату (в случае наложенного платежа)
+                <input type="radio" name="pay-method" value="privat">
+                <span></span>
+            </label>
+            <label>
+                На карту Монобанка принимаем полную оплату заказа или предоплату (в случае наложенного платежа)
+                <input type="radio" name="pay-method" value="mono">
+                <span></span>
+            </label>
+        </div>
+        <div class="delivery-method radio-block">
+            <p>Выберите способ доставки</p>
+            <label>
+                Самовывоз (для Харькова)
+                <input type="radio" name="delivery-method" value="self">
+                <span></span>
+            </label>
+            <label>
+                Новая Почта
+                <input type="radio" name="delivery-method" value="post">
+                <span></span>
+            </label>
+            <label>
+                Justin
+                <input type="radio" name="delivery-method" value="justin">
+                <span></span>
+            </label>
+        </div>
+        <div class="comment">
+            <p>Комментарий</p>
+            <label>
+                <textarea name="radio" placeholder="Введите комментарий"></textarea>
+            </label>
+        </div>
+    </form>
+</section>

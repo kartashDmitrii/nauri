@@ -1,0 +1,215 @@
+section.user-orders
+  display: flex
+  flex-direction: column
+  margin-bottom: 90px
+  .section-title
+    margin: 0
+    padding-left: 15px
+    @media (max-width: 767px)
+      padding-left: 0
+      margin-bottom: 20px
+  .selects
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: 20px
+    padding-left: 15px
+    @media (max-width: 767px)
+      padding-left: 0
+      flex-direction: column
+      align-items: flex-start
+    .select
+      margin-right: 90px
+      display: flex
+      align-items: center
+      @media (max-width: 900px)
+        margin-right: 25px
+      @media (max-width: 767px)
+        margin-bottom: 15px
+        &:last-child
+          margin-bottom: 0
+      p
+        font-size: 13px
+        line-height: 16px
+        color: #A1A1A1
+        margin: 0 18px 0 0
+        @media (max-width: 900px)
+          margin-right: 10px
+      label
+        position: relative
+        &:after
+          content: ''
+          min-width: 6px
+          min-height: 2px
+          background: url("../img/svg/slider-arrow.svg") center center / 100% 100% no-repeat
+          position: absolute
+          transform: rotate(90deg)
+          top: 0
+          right: 6px
+          bottom: 0
+          margin: auto
+      select
+        font-size: 13px
+        line-height: 16px
+        color: $text-color
+        border: solid #c4c4c4
+        padding-right: 34px
+        appearance: none
+        border-width: 0 0 1px 0
+        cursor: pointer
+        outline: none
+        &::-ms-expand
+          display: none
+      &:last-child
+        margin-right: 0
+  .order-flex
+    display: flex
+    flex-direction: column
+    .order
+      display: flex
+      flex-direction: column
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+        @media (max-width: 767px)
+          .flex
+            border-bottom: none
+      .number
+        font-size: 16px
+        line-height: 20px
+        color: $text-color
+        padding-left: 15px
+        margin: 0 0 5px
+        @media (max-width: 767px)
+          padding-left: 0
+      .date
+        font-size: 13px
+        line-height: 15px
+        padding-left: 15px
+        color: #a1a1a1
+        margin: 0 0 5px
+        @media (max-width: 767px)
+          padding-left: 0
+      .flex
+        display: flex
+        align-items: flex-start
+        padding: 0
+        border: solid #C4C4C4
+        border-width: 1px 0
+        @media (max-width: 767px)
+          flex-direction: column
+          border-bottom: 2px solid $main-color
+        .list
+          width: 67%
+          padding-right: 13px
+          padding-left: 20px
+          box-sizing: border-box
+          display: flex
+          flex-direction: column
+          @media (max-width: 767px)
+            width: 100%
+            padding-left: 0
+          .products
+            display: flex
+            flex-direction: column
+            border-bottom: 1px solid #e6e6e6
+            padding-top: 10px
+            .product
+              display: flex
+              align-items: center
+              margin-bottom: 15px
+              &:last-child
+                margin-bottom: 10px
+              .image
+                width: 41px
+                height: 41px
+                margin-right: 16px
+                img
+                  object-fit: cover
+                  object-position: center
+              .info
+                flex: 2
+                display: flex
+                flex-direction: column
+                max-width: 315px
+                margin-right: 15px
+                align-self: flex-end
+                p
+                  font-size: 13px
+                  line-height: 140%
+                  color: $text-color
+                  margin: 0
+                .size
+                  color: #a1a1a1
+              .count
+                font-size: 13px
+                line-height: 140%
+                color: $text-color
+                margin: 0
+                flex: 1
+                text-align: center
+              .price
+                font-size: 13px
+                line-height: 140%
+                color: $text-color
+                margin: 0
+          .total
+            display: flex
+            align-self: center
+            justify-content: flex-end
+            width: 100%
+            margin: 5px 0
+            span
+              font-size: 13px
+              line-height: 140%
+              color: $text-color
+              margin: 0 5px 0 0
+            p
+              margin: 0
+              font-weight: 600
+              font-size: 13px
+              line-height: 140%
+              color: $text-color
+        .status
+          width: 33%
+          margin: 15px 0
+          padding-left: 17px
+          box-sizing: border-box
+          position: relative
+          @media (max-width: 767px)
+            width: 100%
+            padding-left: 0
+            padding-top: 10px
+          &:before
+            content: ''
+            width: 1px
+            height: 95%
+            position: absolute
+            top: 0
+            bottom: 0
+            left: -1px
+            margin: auto
+            background: #C4C4C4
+            @media (max-width: 767px)
+              width: 100%
+              height: 1px
+              bottom: auto
+              right: 0
+              left: 0
+          ul
+            width: 100%
+            padding: 0
+            margin: 0
+            display: flex
+            flex-direction: column
+            list-style: none
+            li
+              margin: 0 0 5px
+              font-size: 13px
+              line-height: 15px
+              color: $text-color
+              &.complete
+                color: #09C74a
+              span
+                color: #a1a1a1
+                margin-right: 3px

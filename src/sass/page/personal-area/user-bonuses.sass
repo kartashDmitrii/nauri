@@ -1,0 +1,163 @@
+section.user-bonuses
+  display: flex
+  flex-direction: column
+  padding-top: 5px
+  padding-left: 15px
+  margin-bottom: 100px
+  .section-title
+    margin-bottom: 20px
+  .grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 30px
+    grid-template-rows: max-content auto
+    grid-template-areas: 'cashback discount' 'cashback birthday-gift'
+    align-items: flex-start
+    @media (max-width: 900px)
+      grid-gap: 15px
+    @media (max-width: 576px)
+      grid-template-columns: 1fr
+      grid-template-areas: 'cashback' 'discount' 'birthday-gift'
+    .cashbacks
+      grid-area: cashback
+      display: flex
+      flex-direction: column
+      box-shadow: -4px -4px 10px rgba(219, 219, 219, 0.25), 4px 4px 10px rgba(219, 219, 219, 0.25)
+      padding: 30px 55px 40px
+      box-sizing: border-box
+      width: 100%
+      @media (max-width: 1365px)
+        padding: 30px 40px
+      @media (max-width: 900px)
+        padding: 30px 20px
+      .title
+        font-size: 18px
+        line-height: 30px
+        text-transform: uppercase
+        color: $text-color
+        margin: 0 0 16px
+        text-align: center
+      .cashback-summ-total
+        max-width: 265px
+        width: 100%
+        align-self: center
+        background: $main-color
+        color: #ffffff
+        font-weight: 700
+        font-size: 20px
+        line-height: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 0 30px
+      .block
+        display: flex
+        flex-direction: column
+        align-items: center
+        box-sizing: border-box
+        box-shadow: -4px -4px 10px rgba(219, 219, 219, 0.25), 4px 4px 10px rgba(219, 219, 219, 0.25)
+        padding: 10px 40px 15px
+        margin-bottom: 25px
+        @media (max-width: 900px)
+          padding: 10px 20px 15px
+        &.friend-cashback
+          margin-bottom: 0
+        &>p
+          font-size: 16px
+          line-height: 30px
+          color: $text-color
+          margin: 0 0 3px
+        .summ
+          font-weight: 700
+          font-size: 20px
+          line-height: 30px
+          color: $main-color
+          margin: 0 0 12px
+        .promo
+          display: flex
+          align-items: center
+          padding-top: 12px
+          border-top: 1px solid #e4e4e4
+          span
+            font-weight: 300
+            font-size: 11px
+            line-height: 18px
+            margin-right: 20px
+          .code
+            display: flex
+            align-items: center
+            position: relative
+            padding-right: 17px
+            p
+              padding: 2px 25px
+              box-sizing: border-box
+              margin: 0
+              border: 1px solid #E4E4E4
+              text-transform: uppercase
+              font-weight: 300
+              font-size: 11px
+              line-height: 18px
+            button
+              width: 13px
+              height: 13px
+              border: none
+              outline: none
+              position: absolute
+              right: 0
+              top: 0
+              bottom: 0
+              margin: auto
+              background: url("../img/svg/copy.svg") center center / 100% 100% no-repeat
+              cursor: pointer
+    .discount
+      grid-area: discount
+    .birthday-gift
+      grid-area: birthday-gift
+    .small-block
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 30px 15px
+      box-sizing: border-box
+      box-shadow: -4px -4px 10px rgba(219, 219, 219, 0.25), 4px 4px 10px rgba(219, 219, 219, 0.25)
+      &>p
+        font-size: 18px
+        line-height: 30px
+        text-transform: uppercase
+        color: $text-color
+        margin: 0 0 16px
+        text-align: center
+        @media (max-width: 1200px)
+          margin: 0 0 8px
+          line-height: 20px
+      .summ
+        width: 100%
+        max-width: 265px
+        color: #ffffff
+        background-color: $main-color
+        margin: 0 0 7px
+        font-weight: 700
+        font-size: 20px
+        line-height: 30px
+        padding: 5px
+        box-sizing: border-box
+        display: flex
+        align-items: center
+        justify-content: center
+      .alert
+        display: flex
+        flex-direction: column
+        align-items: center
+        span
+          font-weight: 700
+          font-size: 13px
+          line-height: 18px
+          color: $main-color
+          margin: 0
+          text-align: center
+        p
+          margin: 0
+          font-size: 13px
+          line-height: 18px
+          color: #000
+          text-align: center

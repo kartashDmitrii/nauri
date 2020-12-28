@@ -19,9 +19,6 @@ export default class popupFunc {
         } else {
             this.popup.querySelectorAll('.close').forEach(elem => elem.addEventListener('click', this.closePopupFunc));
         }
-        if (document.querySelector('.popup-wrapper') && this.wrapper) {
-            document.querySelector('.popup-wrapper').addEventListener('click', this.closePopupFunc);
-        }
     }
     openPopup(event){
         if(event.target.dataset.stopEvent === undefined) {
@@ -55,7 +52,7 @@ export default class popupFunc {
         }
     }
     closePopup(event){
-        if (!event.target.classList.contains('close') && event.target.closest(`.${this.button.dataset.popup}`) !== null){
+        if (!event.target.classList.contains('close')){
             event.stopPropagation();
         } else {
             if (Array.isArray(this.popup)){
@@ -67,6 +64,9 @@ export default class popupFunc {
                     if (window.screen.width < 768) {
                         document.body.classList.remove('hidden')
                     }
+                    if (document.querySelector('.popup-wrapper') && this.wrapper) {
+                        document.querySelector('.popup-wrapper').classList.remove('active');
+                    }
                 })
             } else {
                 this.popup.classList.remove('active');
@@ -76,10 +76,11 @@ export default class popupFunc {
                 if (window.screen.width < 768) {
                     document.body.classList.remove('hidden')
                 }
+                if (document.querySelector('.popup-wrapper') && this.wrapper) {
+                    document.querySelector('.popup-wrapper').classList.remove('active');
+                }
             }
-        }
-        if (document.querySelector('.popup-wrapper') && this.wrapper) {
-            document.querySelector('.popup-wrapper').classList.remove('active');
+            window.removeEventListener('mousedown', this.closePopupFunc);
         }
     }
 }
